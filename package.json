@@ -1,0 +1,26 @@
+{
+  "name": "responsive-navbar-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abinoval/PowQuran.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abinoval/PowQuran/issues"
+  },
+  "homepage": "https://github.com/abinoval/PowQuran#readme"
+}
