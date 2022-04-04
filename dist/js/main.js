@@ -64,8 +64,8 @@ if (params.get("surat") == null) {
                                         Your browser does not support the
                                         <code>audio</code> element.
                                     </audio>
-                                    <h2 id="arabic-ayah" class="font-bold md:text-4xl sm:text-3xl text-2xl md:leading-[4.8rem] sm:leading-[4.2rem] leading-[3.2rem] font-['Amiri'] tracking-[1px] text-teal-700 border-2 rounded-md  ring-1 ring-teal-500 bg-rose-200">${r.text.arab}</h2>
-                                    <p class="font-['poppins'] bg-teal-500 ring-1 ring-rose-400 text-white max-w-fit py-2 px-6 rounded-md shadow-xl text-sm">${r.translation.id}</p>
+                                    <h2 id="arabic-ayah" class="font-bold text-center md:text-4xl sm:text-3xl text-2xl md:leading-[4.8rem] sm:leading-[4.2rem] leading-[3.2rem] font-['Amiri'] tracking-[1px] text-teal-700 border-2 rounded-md  ring-1 ring-teal-500 bg-rose-200">${r.text.arab}</h2>
+                                    <p class="font-['poppins']   bg-teal-500 ring-1 ring-rose-400 text-white max-w-fit py-2 px-6 rounded-md shadow-xl text-xs">${r.translation.id}</p>
                                 </div>
                             </div>`;
             });

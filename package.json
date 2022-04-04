@@ -17,10 +17,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abinoval/PowQuran.git"
+    "url": "git+https://github.com/alrescha79-cmd/quran.git"
   },
   "bugs": {
-    "url": "https://github.com/abinoval/PowQuran/issues"
+    "url": "https://github.com/alrescha79-cmd/quran/issues"
   },
-  "homepage": "https://github.com/abinoval/PowQuran#readme"
+  "homepage": "https://github.com/alrescha79-cmd/quran#readme"
 }
