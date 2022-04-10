@@ -50,7 +50,7 @@ if (params.get("surat") == null) {
             const surahData = response.data;
 
             surahHeader.querySelector('h1').innerHTML = `${surahData.name.transliteration.id} (${surahData.name.translation.id})`;
-            surahHeader.querySelector('p').innerHTML = `${surahData.tafsir.id}`;
+            // surahHeader.querySelector('p').innerHTML = `${surahData.tafsir.id}`;
 
             document.querySelectorAll('.web-desc').forEach(webDesc => {
                 webDesc.setAttribute('content', surahData.deskripsi);
