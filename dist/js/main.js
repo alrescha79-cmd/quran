@@ -43,11 +43,18 @@ if (params.get("surat") == null) {
 } else {
     const sidebarToggle = document.querySelector("#sidebar-toggle");
     const sidebar = document.querySelector("#sidebar");
-
     sidebarToggle.addEventListener("click", function () {
         sidebar.classList.toggle("translate-x-0");
         sidebar.classList.toggle("-translate-x-72");
     });
+// klik diluar navabar
+    window.addEventListener('click', function (e) {
+        if (e.target != sidebarToggle && e.target != sidebar) {
+            sidebar.classList.remove("translate-x-0");
+            sidebar.classList.add("-translate-x-72");
+        }
+    });
+
     const search = document.querySelectorAll(".search");
     search.forEach((s) => {
         s.addEventListener("submit", (e) => {
@@ -105,7 +112,6 @@ if (params.get("surat") == null) {
                                 </div>
                             </div>`;
             });
-
             ayahList.innerHTML = ayah;
         });
 
