@@ -43,11 +43,12 @@ if (params.get("surat") == null) {
 } else {
     const sidebarToggle = document.querySelector("#sidebar-toggle");
     const sidebar = document.querySelector("#sidebar");
+    const cari = document.querySelector(".search");
     sidebarToggle.addEventListener("click", function () {
         sidebar.classList.toggle("translate-x-0");
         sidebar.classList.toggle("-translate-x-72");
     });
-// klik diluar navabar
+// klik diluar navbar
     window.addEventListener('click', function (e) {
         if (e.target != sidebarToggle && e.target != sidebar) {
             sidebar.classList.remove("translate-x-0");

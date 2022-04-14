@@ -22,14 +22,14 @@
 <body class="h-full overflow-hidden dark:bg-black">
   <div class="relative h-screen overflow-hidden">
     <div class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-8 py-2 bg-white border-b dark:bg-black">
-      <a href="#" class="text-xl font-black font-['nunito'] md:order-1 order-2 text-gray-800 group"><span class="inline-block text-teal-400 dark:text-gray-400 group-hover:text-teal-700">Baca</span><span class="text-teal-700 group-hover:text-teal-400 dark:text-gray-300">QU</span></a>
+      <a href="#" class="text-xl font-black font-['nunito'] md:border-1 order-2 text-gray-800 group md:-translate-x-72"><span class="inline-block text-teal-400 dark:text-gray-400 group-hover:text-teal-700">Baca</span><span class="text-teal-700 group-hover:text-teal-400 dark:text-gray-300">QU</span></a>
       <div class="items-center order-2 hidden gap-2 md:flex">
         <form method="" class="search" action="">
-            <input class="border py-1.5  px-3 rounded-md focus:outline-1 ring ring-teal-300 dark:ring-transparent focus:ring-gray-400 font-['poppins'] search-input" placeholder="Cari surat.." type="search">
+            <input class="order py-1.5  px-3 rounded-lg focus:outline ring ring-teal-300 focus:ring-teal-500 dark:ring-transparent w-32 focus:w-44 animate-none duration-300 dark:focus:ring-gray-400 font-['poppins'] search-input" placeholder="Cari surat.." type="search">
         </form>
         <!-- toggle darkmode -->
         <ul>
-          <li class="flex items-center h-8 mt-3 bg-teal-400 border-2 rounded-md w--32 pl lg:mt-0 dark:bg-gray-400 outline outline-2 outline-teal-700">
+          <li class="flex items-center h-8 mt-3 bg-teal-400 border-2 rounded-md w--32 pl lg:mt-0 dark:bg-gray-400 outline outline-2 outline-gray-400">
             <div class="flex p-2">
               <span class="pr-1 text-sm text-white">light</span>
               <input type="checkbox" class="hidden" id="dark-toggle1" />
@@ -43,22 +43,25 @@
           </li>
         </ul>
         <!-- toggle darkmode -->
-        <a href="about.html" class="block p-1 mx-2 bg-teal-400 rounded-lg dark:bg-gray-400 dark:hover:bg-gray-500 ring ring-teal-600 ring-offset-1 hover:bg-teal-600 hover:ring-teal-400">
+        <a href="about.html" class="block p-1 mx-2 bg-teal-400 rounded-lg dark:bg-gray-400 dark:hover:bg-gray-500 ring dark:ring-gray-400 dark:hover:ring-gray-200 ring-teal-600 ring-offset-1 hover:bg-teal-600 hover:ring-teal-400">
           <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgb(255, 255, 255); "><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
         </a>
-        <a href="https://github.com/alrescha79-cmd/quran" target="_blank" class="block p-2 bg-teal-400 rounded-md dark:bg-gray-400 dark:hover:bg-gray-500 focus:outline-none ring ring-teal-600 ring-offset-1 focus:ring-teal-600 hover:bg-teal-600 hover:ring-teal-400 ">
+        <a href="https://github.com/alrescha79-cmd/quran" target="_blank" class="block p-2 bg-teal-400 rounded-md dark:bg-gray-400 dark:hover:bg-gray-500 focus:outline-none ring ring-teal-600 ring-offset-1 focus:ring-teal-600 hover:bg-teal-600 hover:ring-teal-400 dark:ring-gray-400 dark:hover:ring-gray-200">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
         </a>
-
       </div>
-      <button id="sidebar-toggle" class="order-1 p-2 bg-teal-400 rounded-md dark:bg-gray-400 focus:outline-none ring ring-transparent ring-offset-2 focus:ring-teal-600 dark:focus:ring-white hover:bg-teal-600 hover:border hover:border-sky-200 md:hidden">
+      <button id="sidebar-toggle" class="border-1 p-2 bg-teal-400 rounded-md focus:rounded-md dark:bg-gray-400 focus:outline-none ring ring-transparent ring-offset-2 focus:ring-teal-600 dark:focus:ring-white hover:bg-teal-600 hover:border hover:border-sky-200 md:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
       </button>
+      <form class="search">
+        <div class="flex ">
+          <input class="flex translate-x-16 order-2 focus:translate-x-0 rounded-full focus:rounded-md focus:outline-none ring-1 ring-teal-300 ring-offset-2 dark:ring-gray-400 dark:focus:ring-white focus:ring-teal-500 font-['poppins'] w-10 focus:w-32 animate-none duration-300 sm:hidden" placeholder="🔎 Cari surat.." type="search">
+        </form>
+      </div>
     </div>
     <div class="relative z-10 flex h-full overflow-hidden">
       <div id="sidebar" class="min-w-[280px] w-[280px] max-w-full md:translate-x-0 -translate-x-72 px-8 bg-white dark:bg-black mt-14 py-6 font-['poppins'] space-y-1 border-r fixed bottom-0 top-0 overflow-x-auto transition-all duration-300 z-10">
         <div class="flex flex-wrap items-center gap-3 md:hidden">
-          
           <a href="https://github.com/alrescha79-cmd/quran" target="_blank" class="block bg-teal-400 rounded-md dark:bg-gray-400 dark:ring-gray-600 dark:hover:bg-gray-500 dark:hover:ring-gray-200 focus:outline-none ring ring-teal-700 ring-offset-1 focus:ring-teal-600 hover:bg-teal-600 hover:ring-teal-400 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
           </a>
